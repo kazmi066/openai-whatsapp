@@ -46,8 +46,7 @@ function App() {
           <div className="flex-1 h-screen min-h-0 bg-[#0b141a]">
             <div className='w-11/12 mx-auto h-full overflow-y-scroll pt-4 pb-24'>
               {botMessages.map((message, index) => (
-                <div className={`text-white bg-secondary p-2 mb-1 ${message.isUser ? 'user' : 'bot'}`} key={index}>
-                  {message}
+                <div dangerouslySetInnerHTML={{ __html: message }} className={`text-white bg-secondary p-2 mb-1 ${message.isUser ? 'user' : 'bot'}`} key={index}>
                 </div>
               ))}
               {loader && <Spinner />}
