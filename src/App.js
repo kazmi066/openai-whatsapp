@@ -6,7 +6,7 @@ import { Spinner } from './components/spinner';
 import { ReactComponent as SendIcon } from './assets/sendIcon.svg';
 
 const configuration = new Configuration({
-  apiKey: process.env.REACT_APP_OPENAI_KEY
+  apiKey: `${process.env.REACT_APP_OPENAI_KEY}`
 });
 
 const openai = new OpenAIApi(configuration);
