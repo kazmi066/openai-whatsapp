@@ -1,4 +1,4 @@
-# Whatsapp clone using OpenAI with React and Tailwind-css
+### Whatsapp clone using OpenAI with React and Tailwind-css
 
 ### Start project
 `npm i`
